@@ -1,0 +1,315 @@
+#include <iostream>
+#include <math.h>
+#include <pthread.h>
+#include "Kmeans.h"
+#include "pbarrier.h"
+
+#define NUM 4
+vector<observations> dataset;
+vector<cluster> kCluster;
+//vector<cluster> localClusterThread[NUM];
+
+/*
+ * se asigna los puntos del cluster actual para recalcular los centroides
+ */
+vector<observations> currentThreadPuntos;
+struct observations nuevoCentroide[NUM];
+/*
+ * Para escribir resultados
+ */
+struct observations centroidesThread[NUM];
+
+
+
+int terminoAjustes;
+int currentSize;
+Kmeans *kmeans;
+
+pthread_mutex_t lockt=PTHREAD_MUTEX_INITIALIZER;
+pthread_barrier_t barrier;
+
+void cleanCentroide(struct observations *centroide){
+
+    centroide->edad=0.0f;
+    centroide->sector=0.0f;
+    centroide->padecimiento=0.0f;
+    centroide->medicamento=0.0f;
+    centroide->genero=0.0f;
+    centroide->entidad=0.0f;
+
+
+}
+
+double distanciaMinima(struct observations punto, struct observations centroide){
+
+    double d=0;
+
+
+    d += pow(punto.edad -centroide.edad, 2);
+    d += pow(punto.genero -centroide.genero, 2);
+    d += pow(punto.entidad -centroide.entidad, 2);
+    d += pow(punto.sector -centroide.sector, 2);
+    d += pow(punto.padecimiento -centroide.padecimiento, 2);
+    d += pow(punto.medicamento -centroide.medicamento, 2);
+    return sqrt(d);
+}
+
+
+
+void* asignaPuntosFunc(void *args) {
+
+    int idThread=*(int*)args;
+    int j=0;
+    vector<cluster> localkCluster=kCluster;
+    struct cluster *seleccion;
+    int localK=0;
+
+
+    //for( j=inicio;j<fin;j++){
+    for( j=idThread;j<currentSize;j+=NUM){
+        double dMin=numeric_limits<double>::max();
+        double dist=0;
+
+        for(int k=0;k<localkCluster.size();k++){
+
+            dist=distanciaMinima(dataset[j],localkCluster[k].centro);
+            if(dist<dMin){
+                dMin=dist;
+                seleccion=&localkCluster[k];
+
+            }
+        }
+        seleccion->puntos.push_back(dataset[j]);
+
+
+    }
+
+
+    pthread_mutex_lock(&lockt);
+    for(int k=0;k<localkCluster.size();k++){
+
+       kCluster[k].puntos.insert(kCluster[k].puntos.end(),localkCluster[k].puntos.begin(),localkCluster[k].puntos.end());
+    }
+    pthread_mutex_unlock(&lockt);
+
+
+
+    //localClusterThread[idThread]=localkCluster;
+
+
+}
+
+void asignaPuntos(){
+    time_t rawtime;
+
+    /*printf("********* ASIGNA PUNTOS **********\n");
+    time (&rawtime);
+    printf ("The current local time is: %s", ctime (&rawtime));
+
+     */
+    pthread_t tid[NUM];
+    int arg[NUM];
+    int i=0;
+    for( i=0;i<NUM;i++){
+        arg[i]=i;
+        pthread_create(&tid[i],NULL,asignaPuntosFunc,(void*)&arg[i]);
+
+    }
+
+    for(i=0;i<NUM;i++)
+    {
+        pthread_join(tid[i],NULL);
+    }
+
+    /*
+     * for(int k=0;k<kCluster.size();k++){
+        printf("Total para k %d - %d\n ",k,kCluster[k].puntos.size());
+    }
+     */
+    /*
+    time (&rawtime);
+    printf ("The current local time is: %s", ctime (&rawtime));
+    printf("********* ASIGNA PUNTOS FIN **********\n");
+     */
+}
+
+
+
+void *reasignaCentroidesFunc(void *args){
+
+    int idThread=*(int*)args;
+    int j=0;
+    unsigned long totalPuntos=currentThreadPuntos.size();
+    int pasadas=0;
+
+
+    for(  j=idThread;j<totalPuntos;j+=NUM){
+
+        kmeans->calculaNuevoCentroide(&nuevoCentroide[idThread],currentThreadPuntos[j],totalPuntos);
+
+    }
+
+
+
+
+
+}
+
+int reasignaCentroides(){
+
+    unsigned long total=0;
+    time_t rawtime;
+
+    /*printf("********* AJUSTA CENTROIDES **********\n");
+    time (&rawtime);
+    printf ("The current local time is: %s\n", ctime (&rawtime));
+     */
+    terminoAjustes=0;
+
+    struct observations nuevoCentroideReduce;
+    for(int k=0;k<kCluster.size();k++){
+
+        /*
+         * Por cada cluster disparo los 4 hilos, al regreso tengo ya
+         * printf("%d %d\n",k,kCluster[k].puntos.size());
+         */
+        if(kCluster[k].puntos.empty()){
+            terminoAjustes++;
+            continue;
+        }
+
+        cleanCentroide(&nuevoCentroideReduce);
+
+        pthread_t tid[NUM];
+        int arg[NUM];
+        int i=0;
+
+        currentThreadPuntos=kCluster[k].puntos;
+
+
+        /*
+            printf("<-------------- CLUSTER %d -------------->\n",k);
+            printf("Reajustando centroide cluster %d puntos %d\n",k,currentThreadPuntos.size());
+         */
+
+
+        for( i=0;i<NUM;i++){
+            arg[i]=i;
+            pthread_create(&tid[i],NULL,reasignaCentroidesFunc,(void*)&arg[i]);
+
+        }
+
+        //pthread_barrier_wait(&barrier);
+
+        for(i=0;i<NUM;i++){
+
+            pthread_join(tid[i],NULL);
+            kmeans->calculaNuevoCentroide(&nuevoCentroideReduce,nuevoCentroide[i],1);
+            cleanCentroide(&nuevoCentroide[i]);
+        }
+
+
+
+
+
+
+
+        if(kmeans->centroidesIguales(kCluster[k].centro,nuevoCentroideReduce)){
+            terminoAjustes++;
+
+            if(terminoAjustes==kCluster.size()) {
+                printf("--- %d\n", k);
+                kmeans->printStruct(kCluster[k].centro);
+                kmeans->printStruct(nuevoCentroideReduce);
+            }
+        }
+        else{
+
+            kCluster[k].centro=nuevoCentroideReduce ;
+        }
+
+
+        // printf("<-------------- CLUSTER %d-------------->\n",k);
+
+        total+=kCluster[k].puntos.size();
+    }
+
+    /*
+     * printf("Total %lu\n",total);
+
+    time (&rawtime);
+    printf ("The current local time is: %s\n", ctime (&rawtime));
+    printf("********* AJUSTA CENTROIDES FIN **********\n");
+     */
+
+    return terminoAjustes;
+
+}
+
+void procesaPrueba(int type,int size){
+
+    unsigned long total=0;
+    time_t rawtime;
+    if(type==1) {
+
+
+        printf("************ SERIAL ***************\n");
+
+
+        kmeans->kmeansSerial(5, true);
+
+        printf("************ SERIAL ***************\n");
+    }
+    else {
+
+
+        kCluster = kmeans->kCluster;
+        dataset = kmeans->dataset;
+        currentSize = dataset.size();
+
+
+        //pthread_barrier_init(&barrier, NULL, NUM +1);
+        int ajustes = 0;
+        int ites = 0;
+
+        printf("************ PARALELO ***************\n");
+
+        time(&rawtime);
+        printf("The current local time is: %s\n", ctime(&rawtime));
+
+        while (ajustes < kCluster.size()) {
+
+
+            for (int k = 0; k < kCluster.size(); k++) {
+                kCluster[k].puntos.clear();
+            }
+
+
+            asignaPuntos();
+
+            ajustes = reasignaCentroides();
+
+
+            ites++;
+
+        }
+
+        printf("Total de iteraciones %d\n", ites);
+        time(&rawtime);
+        printf("The current local time is: %s\n", ctime(&rawtime));
+
+        printf("************ PARALELO ***************\n");
+    }
+
+
+}
+
+int main() {
+    kmeans= new Kmeans(5,false,1);
+
+    procesaPrueba(2,0);
+
+
+
+
+}

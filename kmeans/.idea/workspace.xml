@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="kmeans" targetName="kmeans" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8d70826e-d29f-48bb-a659-46f4511e0e40" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="286" column="0" lean-forward="false" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
+              <folding>
+                <marker date="1524118479651" expanded="true" signature="643:827" ph="{...}" />
+                <marker date="1524118479651" expanded="true" signature="909:1265" ph="{...}" />
+                <marker date="1524118479651" expanded="true" signature="1304:2194" ph="{...}" />
+                <marker date="1524118479651" expanded="true" signature="2215:2925" ph="{...}" />
+                <marker date="1524118479651" expanded="true" signature="2969:3253" ph="{...}" />
+                <marker date="1524118479651" expanded="true" signature="3279:5377" ph="{...}" />
+                <marker date="1524118479651" expanded="true" signature="5416:6511" ph="{...}" />
+                <marker date="1524118479651" expanded="true" signature="6524:6591" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vector" pinned="false" current-in-tab="false">
+        <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/vector">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22380">
+              <caret line="1492" column="0" lean-forward="false" selection-start-line="1492" selection-start-column="0" selection-end-line="1492" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pbarrier.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pbarrier.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Kmeans.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Kmeans.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1065">
+              <caret line="71" column="106" lean-forward="false" selection-start-line="71" selection-start-column="106" selection-end-line="71" selection-end-column="106" />
+              <folding>
+                <marker date="1524095340537" expanded="true" signature="172:323" ph="{...}" />
+                <marker date="1524095340537" expanded="true" signature="340:408" ph="{...}" />
+                <marker date="1524095340537" expanded="true" signature="426:1980" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Kmeans.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Kmeans.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2850">
+              <caret line="190" column="35" lean-forward="false" selection-start-line="190" selection-start-column="35" selection-end-line="190" selection-end-column="35" />
+              <folding>
+                <marker date="1524118341089" expanded="true" signature="257:945" ph="{...}" />
+                <marker date="1524118341089" expanded="true" signature="964:969" ph="{...}" />
+                <marker date="1524118341089" expanded="true" signature="1055:1952" ph="{...}" />
+                <marker date="1524118341089" expanded="true" signature="2014:2203" ph="{...}" />
+                <marker date="1524118341089" expanded="true" signature="2263:5282" ph="{...}" />
+                <marker date="1524118341089" expanded="true" signature="5416:5974" ph="{...}" />
+                <marker date="1524118341089" expanded="true" signature="6075:6431" ph="{...}" />
+                <marker date="1524118341089" expanded="true" signature="6488:6854" ph="{...}" />
+                <marker date="1524118341089" expanded="true" signature="6891:7835" ph="{...}" />
+                <marker date="1524118341089" expanded="true" signature="7863:8373" ph="{...}" />
+                <marker date="1524118341089" expanded="true" signature="8395:9253" ph="{...}" />
+                <marker date="1524118341089" expanded="true" signature="9319:9660" ph="{...}" />
+                <marker date="1524118341089" expanded="true" signature="9766:10113" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pthread.h" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/include/pthread.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4620">
+              <caret line="327" column="32" lean-forward="false" selection-start-line="327" selection-start-column="32" selection-end-line="327" selection-end-column="32" />
+              <folding>
+                <marker date="1516248827000" expanded="false" signature="2093:2627" ph="..." />
+                <marker date="1516248827000" expanded="false" signature="2751:2812" ph="..." />
+                <marker date="1516248827000" expanded="false" signature="3385:3424" ph="..." />
+                <marker date="1516248827000" expanded="false" signature="3460:3497" ph="..." />
+                <marker date="1516248827000" expanded="false" signature="5760:6095" ph="..." />
+                <marker date="1516248827000" expanded="false" signature="10618:10767" ph="..." />
+                <marker date="1516248827000" expanded="false" signature="17646:17773" ph="..." />
+                <marker date="1516248827000" expanded="false" signature="18308:18343" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>clusterSz</find>
+      <find>constant</find>
+      <find>asignaPuntos</find>
+      <find>distanciaMinima</find>
+      <find>ctime</find>
+      <find>IGUAL</find>
+      <find>/home</find>
+      <find>barrier</find>
+      <find>printStr</find>
+      <find>clear</find>
+      <find>currentThreadPuntos</find>
+      <find>PRINTF(</find>
+      <find>kmeans</find>
+      <find>ites</find>
+      <find>printf(</find>
+      <find>serial</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Kmeans.h" />
+        <option value="$PROJECT_DIR$/pbarrier.h" />
+        <option value="$PROJECT_DIR$/Kmeans.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="777" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="kmeans" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="kmeans" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.kmeans">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="kmeans" RUN_TARGET_NAME="kmeans" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+    </configuration>
+    <configuration name="kmeans" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="kmeans" TARGET_NAME="kmeans" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="kmeans" RUN_TARGET_NAME="kmeans">
+      <envs />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="Application.kmeans" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d70826e-d29f-48bb-a659-46f4511e0e40" name="Default" comment="" />
+      <created>1523982229079</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1523982229079</updated>
+      <workItem from="1523982234083" duration="522000" />
+      <workItem from="1523983027651" duration="14065000" />
+      <workItem from="1524008699977" duration="65000" />
+      <workItem from="1524008788905" duration="13906000" />
+      <workItem from="1524066731680" duration="5886000" />
+      <workItem from="1524094789102" duration="185000" />
+      <workItem from="1524094990702" duration="16751000" />
+      <workItem from="1524148839847" duration="11000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="51391000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1280" height="777" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1890625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23120567" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6893617" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63687944" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23120567" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6212766" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1890625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63687944" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="63" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="kCluster" />
+        <watch expression="dataset" />
+        <watch expression="nuevoCentroide" />
+        <watch expression="currentThreadPuntos" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>kCluster.size()</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>currentSize</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>localClusterThread-&gt;size()</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>dataset.size()</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>dataset</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>dataset[j]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/vector">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22380">
+          <caret line="1492" column="0" lean-forward="false" selection-start-line="1492" selection-start-column="0" selection-end-line="1492" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4290">
+          <caret line="286" column="0" lean-forward="true" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
+          <folding>
+            <marker date="1524118479651" expanded="true" signature="643:827" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="909:1265" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="1304:2194" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="2215:2925" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="2969:3253" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="3279:5377" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="5416:6511" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="6524:6591" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pbarrier.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kmeans.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="71" column="106" lean-forward="false" selection-start-line="71" selection-start-column="106" selection-end-line="71" selection-end-column="106" />
+          <folding>
+            <marker date="1524095340537" expanded="true" signature="172:323" ph="{...}" />
+            <marker date="1524095340537" expanded="true" signature="340:408" ph="{...}" />
+            <marker date="1524095340537" expanded="true" signature="426:1980" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kmeans.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2850">
+          <caret line="190" column="35" lean-forward="false" selection-start-line="190" selection-start-column="35" selection-end-line="190" selection-end-column="35" />
+          <folding>
+            <marker date="1524118341089" expanded="true" signature="257:945" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="964:969" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="1055:1952" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="2014:2203" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="2263:5282" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="5416:5974" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="6075:6431" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="6488:6854" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="6891:7835" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="7863:8373" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="8395:9253" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="9319:9660" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="9766:10113" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/pthread.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4620">
+          <caret line="327" column="32" lean-forward="false" selection-start-line="327" selection-start-column="32" selection-end-line="327" selection-end-column="32" />
+          <folding>
+            <marker date="1516248827000" expanded="false" signature="2093:2627" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="2751:2812" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="3385:3424" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="3460:3497" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="5760:6095" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="10618:10767" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="17646:17773" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="18308:18343" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1524118479651" expanded="true" signature="643:827" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="909:1265" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="1304:2194" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="2215:2925" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="2969:3253" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="3279:5377" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="5416:6511" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="6524:6591" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kmeans.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="32" />
+          <folding>
+            <marker date="1524095340537" expanded="true" signature="172:323" ph="{...}" />
+            <marker date="1524095340537" expanded="true" signature="340:408" ph="{...}" />
+            <marker date="1524095340537" expanded="true" signature="426:1980" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kmeans.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4080">
+          <caret line="272" column="86" lean-forward="false" selection-start-line="267" selection-start-column="5" selection-end-line="272" selection-end-column="86" />
+          <folding>
+            <marker date="1524118341089" expanded="true" signature="257:945" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="964:969" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="1055:1952" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="2014:2203" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="2263:5282" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="5416:5974" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="6075:6431" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="6488:6854" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="6891:7835" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="7863:8373" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="8395:9253" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="9319:9660" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="9766:10113" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/pthread.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4905">
+          <caret line="327" column="32" lean-forward="false" selection-start-line="327" selection-start-column="32" selection-end-line="327" selection-end-column="32" />
+          <folding>
+            <marker date="1516248827000" expanded="false" signature="2093:2627" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="2751:2812" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="3385:3424" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="3460:3497" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="5760:6095" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="10618:10767" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="17646:17773" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="18308:18343" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="133" column="1" lean-forward="true" selection-start-line="133" selection-start-column="1" selection-end-line="133" selection-end-column="1" />
+          <folding>
+            <marker date="1524118479651" expanded="true" signature="643:827" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="909:1265" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="1304:2194" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="2215:2925" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="2969:3253" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="3279:5377" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="5416:6511" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="6524:6591" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kmeans.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="32" />
+          <folding>
+            <marker date="1524095340537" expanded="true" signature="172:323" ph="{...}" />
+            <marker date="1524095340537" expanded="true" signature="340:408" ph="{...}" />
+            <marker date="1524095340537" expanded="true" signature="426:1980" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kmeans.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4080">
+          <caret line="272" column="86" lean-forward="true" selection-start-line="267" selection-start-column="5" selection-end-line="272" selection-end-column="86" />
+          <folding>
+            <marker date="1524118341089" expanded="true" signature="257:945" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="964:969" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="1055:1952" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="2014:2203" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="2263:5282" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="5416:5974" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="6075:6431" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="6488:6854" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="6891:7835" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="7863:8373" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="8395:9253" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="9319:9660" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="9766:10113" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/pthread.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4905">
+          <caret line="327" column="32" lean-forward="false" selection-start-line="327" selection-start-column="32" selection-end-line="327" selection-end-column="32" />
+          <folding>
+            <marker date="1516248827000" expanded="false" signature="2093:2627" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="2751:2812" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="3385:3424" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="3460:3497" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="5760:6095" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="10618:10767" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="17646:17773" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="18308:18343" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <marker date="1524118479651" expanded="true" signature="643:827" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="909:1265" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="1304:2194" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="2215:2925" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="2969:3253" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="3279:5377" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="5416:6511" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="6524:6591" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kmeans.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="24" lean-forward="true" selection-start-line="52" selection-start-column="4" selection-end-line="53" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kmeans.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding>
+            <marker date="1524118341089" expanded="true" signature="257:945" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="964:969" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="1055:1952" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="2014:2203" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="2263:5282" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="5416:5974" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="6075:6431" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="6488:6854" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="6891:7835" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="7863:8373" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="8395:9253" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="9319:9660" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="9766:10113" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/pthread.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4905">
+          <caret line="327" column="32" lean-forward="true" selection-start-line="327" selection-start-column="32" selection-end-line="327" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="7" lean-forward="false" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+          <folding>
+            <marker date="1524118479651" expanded="true" signature="643:827" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="909:1265" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="1304:2194" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="2215:2925" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="2969:3253" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="3279:5377" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="5416:6511" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="6524:6591" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="51" lean-forward="false" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/pthread.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3480">
+          <caret line="232" column="11" lean-forward="false" selection-start-line="232" selection-start-column="11" selection-end-line="232" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/pthread.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3480">
+          <caret line="232" column="11" lean-forward="false" selection-start-line="232" selection-start-column="11" selection-end-line="232" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding>
+            <marker date="1524118479651" expanded="true" signature="643:827" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="909:1265" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="1304:2194" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="2215:2925" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="2969:3253" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="3279:5377" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="5416:6511" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="6524:6591" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding>
+            <marker date="1524118479651" expanded="true" signature="643:827" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="909:1265" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="1304:2194" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="2215:2925" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="2969:3253" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="3279:5377" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="5416:6511" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="6524:6591" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kmeans.cpp" />
+    <entry file="file://$PROJECT_DIR$/Kmeans.h" />
+    <entry file="file:///usr/include/c++/5/bits/stl_vector.h" />
+    <entry file="file:///usr/include/x86_64-linux-gnu/bits/pthreadtypes.h" />
+    <entry file="file:///usr/include/pthread.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4620">
+          <caret line="327" column="32" lean-forward="false" selection-start-line="327" selection-start-column="32" selection-end-line="327" selection-end-column="32" />
+          <folding>
+            <marker date="1516248827000" expanded="false" signature="2093:2627" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="2751:2812" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="3385:3424" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="3460:3497" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="5760:6095" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="10618:10767" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="17646:17773" ph="..." />
+            <marker date="1516248827000" expanded="false" signature="18308:18343" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/memory" />
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/new" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kmeans.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="71" column="106" lean-forward="false" selection-start-line="71" selection-start-column="106" selection-end-line="71" selection-end-column="106" />
+          <folding>
+            <marker date="1524095340537" expanded="true" signature="172:323" ph="{...}" />
+            <marker date="1524095340537" expanded="true" signature="340:408" ph="{...}" />
+            <marker date="1524095340537" expanded="true" signature="426:1980" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pbarrier.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/vector">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22380">
+          <caret line="1492" column="0" lean-forward="false" selection-start-line="1492" selection-start-column="0" selection-end-line="1492" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kmeans.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2850">
+          <caret line="190" column="35" lean-forward="false" selection-start-line="190" selection-start-column="35" selection-end-line="190" selection-end-column="35" />
+          <folding>
+            <marker date="1524118341089" expanded="true" signature="257:945" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="964:969" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="1055:1952" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="2014:2203" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="2263:5282" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="5416:5974" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="6075:6431" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="6488:6854" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="6891:7835" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="7863:8373" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="8395:9253" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="9319:9660" ph="{...}" />
+            <marker date="1524118341089" expanded="true" signature="9766:10113" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="286" column="0" lean-forward="false" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
+          <folding>
+            <marker date="1524118479651" expanded="true" signature="643:827" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="909:1265" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="1304:2194" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="2215:2925" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="2969:3253" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="3279:5377" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="5416:6511" ph="{...}" />
+            <marker date="1524118479651" expanded="true" signature="6524:6591" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

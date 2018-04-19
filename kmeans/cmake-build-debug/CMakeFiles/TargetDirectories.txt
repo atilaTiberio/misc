@@ -1,0 +1,3 @@
+/Users/iturbeh/CLionProjects/misc/kmeans/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/iturbeh/CLionProjects/misc/kmeans/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/iturbeh/CLionProjects/misc/kmeans/cmake-build-debug/CMakeFiles/kmeans.dir
