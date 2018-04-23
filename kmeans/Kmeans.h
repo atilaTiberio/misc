@@ -10,6 +10,7 @@
 #include <time.h>
 
 using namespace std;
+
 struct observations{
     float edad=0.0f;
     float genero=0.0f;
@@ -23,6 +24,7 @@ struct cluster{
     struct observations centro;
     vector<observations> puntos;
 };
+
 
 
 
@@ -52,12 +54,16 @@ public:
     uniform_int_distribution<> medicamento{1, 5000};
     vector<observations> dataset;
     vector<cluster> kCluster;
+
+
+
     const char *archivo;
     double distanciaMinima(struct observations punto, struct observations centroide);
 
     void info();
     void cargaDataset();
     void creaFile(int size);
+
     void getRandom(struct observations *observations);
     void printStruct(struct observations structobservations);
 
@@ -65,11 +71,11 @@ public:
     void kmeansParalelo(int clusterSize, bool ejecutar);
     bool centroidesIguales(struct observations centroideActual,struct observations nuevoCentroide);
     void* asignaPuntos(void *args);
-
     void calculaNuevoCentroide(struct observations *nuevoCentroide,struct observations punto, unsigned long totalPuntosAsignados);
 
-    //Kmeans(int clusterSize,bool ejecutar=false,int type=0,const char *file="/home/hiturbe/etc/kmeans/kmeans.bin");
-    Kmeans(int clusterSize,bool ejecutar=false,int type=0,const char *file="/Users/iturbeh/etc/dataBinario/kmeans.bin");
+    Kmeans(int clusterSize,bool ejecutar=false,int type=0,const char *file="/home/hiturbe/etc/kmeans/kmeans.bin");
+    //Kmeans(int clusterSize,bool ejecutar=false,int type=0,const char *file="/Users/iturbeh/etc/dataBinario/kmeans.bin");
+
 
     Kmeans();
     ~Kmeans();

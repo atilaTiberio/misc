@@ -61,49 +61,52 @@ Kmeans::Kmeans() {
 
 Kmeans::Kmeans(int clusterSize, bool ejecutar, int type, const char *fileDirectory) {
 
-
-
     archivo=fileDirectory;
     kCluster.resize(clusterSize);
     cargaDataset();
-    for(int i=0; i<clusterSize;i++) {
-        getRandom(&kCluster[i].centro);
-    }
+
 
 
     if(ejecutar){
 
-/*
- * Genera los clusters randoms
- */
-
-
-    printf("revisando puntos\n");
-    time_t rawtime;
-
-    time (&rawtime);
-    printf ("The current local time is: %s", ctime (&rawtime));
-
-
-    for(int j=0;j<dataset.size();j++){
-        double dMin=numeric_limits<double>::max();
-        double dist=0;
-
-        struct cluster *seleccion;
-
-        for(int k=0;k<clusterSize;k++){
-
-            dist=distanciaMinima(dataset[j],kCluster[k].centro);
-            if(dist<dMin){
-                dMin=dist;
-                seleccion=&kCluster[k];
-            }
+        for(int i=0; i<clusterSize;i++) {
+            getRandom(&kCluster[i].centro);
         }
-        seleccion->puntos.push_back(dataset[j]);
-    }
 
-    time (&rawtime);
-    printf ("The current local time is: %s", ctime (&rawtime));
+
+
+
+    /*
+     * Genera los clusters randoms
+     */
+
+
+        printf("revisando puntos\n");
+        time_t rawtime;
+
+        time (&rawtime);
+        printf ("The current local time is: %s", ctime (&rawtime));
+
+
+        for(int j=0;j<dataset.size();j++){
+            double dMin=numeric_limits<double>::max();
+            double dist=0;
+
+            struct cluster *seleccion;
+
+            for(int k=0;k<clusterSize;k++){
+
+                dist=distanciaMinima(dataset[j],kCluster[k].centro);
+                if(dist<dMin){
+                    dMin=dist;
+                    seleccion=&kCluster[k];
+                }
+            }
+            seleccion->puntos.push_back(dataset[j]);
+        }
+
+        time (&rawtime);
+        printf ("The current local time is: %s", ctime (&rawtime));
     }
 
 
@@ -159,30 +162,6 @@ void Kmeans::kmeansSerial(int clusterSize,bool ejecutar) {
     printf ("The current local time is: %s", ctime (&rawtime));
 
 
-
-
-/*
- * Asignar puntos
- * Dividir el tamaño del arreglo y revisar si es necesario aplicar mutex al cluster
- * cuando se esta agregando un punto
- *
-
-
-    unsigned long totalPuntos=dataset.size();
-    unsigned long base=dataset.size()/16;
-
-    for(int ite=1;ite<=16;ite++){
-        printf("Procesando %d %d\n",base*(ite-1),base*ite);
-        procesa(base*(ite-1),base*ite,clusterSize);
-
-    }
-
-
-
-
-
-
-  */
 
     int reajustes=0;
     int ite=0;
@@ -355,6 +334,8 @@ void Kmeans::creaFile(int size){
 
 
 }
+
+
 void Kmeans::cargaDataset(){
 
 
@@ -380,9 +361,6 @@ void Kmeans::cargaDataset(){
     fclose(file);
 
     printf("Lectura terminada\n");
-
-
-
 
 
 }
@@ -458,5 +436,6 @@ bool Kmeans::centroidesIguales(struct observations centroideActual, struct obser
     nuevoCentroide.sector==centroideActual.sector;
 
 }
+
 
 

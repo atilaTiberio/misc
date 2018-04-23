@@ -1,6 +1,12 @@
-cmake_minimum_required(VERSION 3.9)
+cmake_minimum_required(VERSION 3.10)
 project(kmeans)
 
-set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -pthread")
-add_executable(kmeans main.cpp Kmeans.cpp Kmeans.h pbarrier.h)
+
+include_directories(.)
+
+add_executable(kmeans
+        Kmeans.cpp
+        Kmeans.h
+        main.cpp
+        )

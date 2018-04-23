@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/kmeans.dir/main.cpp.o"
   "CMakeFiles/kmeans.dir/Kmeans.cpp.o"
+  "CMakeFiles/kmeans.dir/main.cpp.o"
   "kmeans.pdb"
   "kmeans"
 )
